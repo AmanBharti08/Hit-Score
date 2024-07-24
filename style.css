@@ -1,0 +1,175 @@
+/* Base styles for mobile devices (default) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Viga", sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-color: brown;
+}
+
+.box {
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 70vh;
+  overflow: hidden;
+  box-shadow: 10px 10px 8px black;
+}
+
+.display {
+  width: 100%;
+  height: 20%;
+  padding: auto;
+  background-color: rgb(173, 147, 114);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.poparea {
+  background-color: burlywood;
+  width: 100%;
+  height: calc(70vh - 20%);
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.circle {
+  cursor: pointer;
+  margin-left: 3px;
+  font-size: large;
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  background-color: black;
+  color: white;
+}
+
+.circle:hover {
+  background-color: white;
+  color: black;
+}
+
+.numberToHit,
+.timer,
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hitdisplay,
+.timerdisplay,
+.scoredisplay {
+  background-color: black;
+  color: white;
+  width: 80px;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  color: black;
+}
+
+.footer a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* Media queries for common breakpoints */
+
+/* Small devices (mobiles, 576px and up) */
+@media (min-width: 576px) {
+  .circle {
+    width: 40px;
+    height: 40px;
+    margin-left: 15px;
+    margin-bottom: 1.5px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .circle {
+    width: 45px;
+    height: 45px;
+    margin-left: 10px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .circle {
+    width: 45px;
+    height: 45px;
+    margin-left: 5px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .circle {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Override specific styles for screens smaller than or equal to 415px */
+@media (min-width: 415px) {
+  .circle {
+    width: 35px;
+    height: 35px;
+    margin-left: 4px;
+    margin-bottom: 3px;
+  }
+}
+
+/* Override specific styles for screens smaller than or equal to 376px */
+@media (min-width: 376px) {
+  .hitdisplay,
+  .timerdisplay,
+  .scoredisplay {
+    width: 70px;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-bottom: 1px;
+  }
+}
