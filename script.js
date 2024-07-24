@@ -62,8 +62,9 @@ function hojashuru() {
         audio
           .play()
           .catch((error) => console.error("Error playing sound:", error));
-        scoreDisplay();
+        makeCircle();
         getNewHit();
+        scoreDisplay();
       } else {
         const circletobered = dets.target.id;
         const circle = document.getElementById(circletobered);

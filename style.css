@@ -126,8 +126,8 @@ html {
 @media (min-width: 768px) {
   .circle {
     width: 45px;
+    margin-left: 15px;
     height: 45px;
-    margin-left: 10px;
   }
 }
 
@@ -135,8 +135,8 @@ html {
 @media (min-width: 992px) {
   .circle {
     width: 45px;
+    margin-left: 15px;
     height: 45px;
-    margin-left: 5px;
   }
 }
 
@@ -145,6 +145,7 @@ html {
   .circle {
     width: 45px;
     height: 45px;
+    margin-left: 15px;
   }
 }
 
