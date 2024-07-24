@@ -120,6 +120,9 @@ html {
     margin-left: 15px;
     margin-bottom: 1.5px;
   }
+  .box {
+    width: 80%;
+  }
 }
 
 /* Medium devices (tablets, 768px and up) */
@@ -171,9 +174,5 @@ html {
     height: 40px;
     margin-left: auto;
     margin-bottom: 1px;
-  }
-
-  .box {
-    width: 80%;
   }
 }
